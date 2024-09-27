@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <title> Registration Page </title>
+    <style>
+        container mt-5{
+          align-items:center;
+          justify-content: flex;  
+        }
+    </style>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">User Registration Form</h2>
+    
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                <div class="invalid-feedback">Please provide your name.</div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                <div class="invalid-feedback">Please provide a valid email address.</div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+                <div class="invalid-feedback">Please provide a password.</div>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" class="form-control" id="confirm-password" placeholder="Confirm password" required>
+                <div class="invalid-feedback">Please confirm your password.</div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Register</button>
+        </form>
+    </div>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Alert Messages</h2>
+        <div class="alert alert-success" role="alert">
+            <i class="fas fa-check-circle"></i> Success! Your operation was completed successfully.
+        </div>
+        <div class="alert alert-warning" role="alert">
+            <i class="fas fa-exclamation-triangle"></i> Warning! Please be cautious when proceeding with this action.
+        </div>
+        <div class="alert alert-danger" role="alert">
+            <i class="fas fa-times-circle"></i> Error! Something went wrong. Please try again later.
+        </div>
+        <div class="alert alert-info" role="alert">
+            <i class="fas fa-info-circle"></i> Info! Please note the changes in the schedule for next week.
+        </div>
+    </div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
